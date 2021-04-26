@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %} | Homepage{% endblock %}
+
+{% block content %}
+  <h3>BookStore  Collections</h3>
+  <a href="{% url 'books:authors' %}" role="button" class="btn btn-primary w-100 mb-2">All collections</a>
+  <a href="{% url 'books:create_author' %}" role="button" class="btn btn-secondary w-100">Add collection</a>
+
+
+{% endblock %}
